@@ -1,0 +1,24 @@
+
+<div class="container">
+<h1><%=@cat.name.capitalize%>'s Toys:</h1>
+    <div class="row">
+        <div class="col table-head">
+        Name
+        </div>
+        <div class="col table-head">
+        Type
+        </div>
+    </div>  
+     <% @toys.each do |toy|%>
+        <div class="row">
+            <div class="col"><%=toy.name%></div>
+            <div class="col"><%=toy.ttype%></div>
+        </div>
+     <%end%>
+     </div>
+
+
+
+
+
+</p>

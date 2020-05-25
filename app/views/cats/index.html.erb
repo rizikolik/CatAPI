@@ -1,0 +1,39 @@
+
+
+
+<div class="container center-text">
+<h1 class="text-center">Listing All Cats</h1>
+  <div class="row text-center">
+    <div class="col table-head">
+      Id
+    </div>
+    <div class="col table-head">
+     Name
+    </div>
+    <div class="col table-head">
+     Color
+    </div>
+  
+  </div>
+
+
+
+<% @cats.each do |cat| %>
+<div class="row text-center">
+  <div class="col "><%= cat.id%></div>
+  <div class="col"><a href="<%=cat_path(cat)%>"><%= cat.name%></a></div>
+  <div class="col"><%= cat.color %></div>
+
+</div>
+<% end %>
+
+</div>
+
+
+
+
+
+
+
+
+

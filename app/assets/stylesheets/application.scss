@@ -1,0 +1,138 @@
+@import "bootstrap";
+@import "font-awesome";
+@import "sweetalert";
+html,
+body {
+  margin: 0;
+  top: 0;
+  padding: 0;
+  background: #f8f9fa;
+}
+i {
+  font-family: FontAwesome !important;
+  padding: 0.2em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: black;
+  }
+}
+.table-head,
+.table {
+  border: 1px solid black;
+}
+
+form {
+  width: 80%;
+  text-align: center;
+  padding: 0.5vh;
+
+  margin: auto;
+
+  padding: 0.5vh;
+
+  margin: auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"],
+input[type="button"] {
+  width: 40%;
+  text-align: center;
+  background-color: #56165c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  &:hover {
+    background-color: #4595a0;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+/*flash*/
+.alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+}
+
+.alert-alert {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
+}
+
+.alert-notice {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
+}
+.table-head {
+  border: 1px solid black;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 740px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 2em;
+  }
+  .table-head {
+    font-size: 1.5h !important;
+  }
+  .col {
+    font-size: 1vh;
+  }
+}
+.btn-info {
+  a {
+    color: white !important;
+    text-decoration: none;
+  }
+
+  &:hover {
+    font-size: 1.3em;
+  }
+}
+.button {
+  .row {
+    margin: auto !important;
+    form {
+      text-align: right;
+    }
+  }
+  position: absolute;
+  bottom: 5em;
+  width: 100%;
+}

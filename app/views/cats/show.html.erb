@@ -1,0 +1,51 @@
+<div class="container text-center">
+
+<h1 class="text-center"><%=@cat.name.capitalize%>'s Specs</h1>
+   <div class="row text-center">
+        <div class="col table-head">Name</div>
+        <div class="col table-head">Color</div>
+  
+   </div>
+
+    <div class="row text-center">
+        <div class="col"><%=@cat.name %></div>
+        <div class="col"><%=@cat.color%></div>
+    
+    </div>
+
+<h2 class="text-center">Toys that Belongs to <%=@cat.name.capitalize%></h2>
+
+    <div class="row text-center">
+        <div class="col table-head">Name</div>
+        <div class="col table-head">Type</div>
+      
+     
+    </div>
+    <%@cat.toys.each do |toy|%>
+        <div class="row text-center">
+            <div class="col"><%=toy.name%></div>
+            <div class="col"><%=toy.ttype%></div>
+           
+        </div>
+    <%end%>
+<a href="<%=edit_cat_path(@cat)%>"><input type="button" name="back"  value="Edit"></a>
+<a href="<%=new_cat_toy_url(@cat)%>"><input type="button" name="back"  value="Add New Toy"></a>
+    </div>
+
+<div class="button">
+<div class="row">
+<div class="col">
+<button type="button" class="btn btn-info left"><i class="fas fa-arrow-left"></i><%= link_to 'Back', cats_path %></button>
+</div>
+<div class="col"><%= button_to  cat_path(@cat), method: :delete, data: {confirm: "Are you sure you want to Delete?" },class: 'right btn-mini btn-danger btn'  do%>
+<i class="fa fa-trash-o" aria-hidden="true">Delete</i>
+<%end%>
+</div>
+</div>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+<%=form_with model: @cat, local:true do |form|%>
+ 
+  <p class="center-text">
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+ 
+  <p class="center-text">
+  
+    <%= form.label :color %><br>
+    <%= form.text_field:color%>
+  </p>
+ 
+  
+   <a href="/"><input type="button" name="back"  value="Back"></a> <%= form.submit %>
+
+ 
+<% end %>
