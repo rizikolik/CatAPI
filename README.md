@@ -7,10 +7,6 @@ Cat API is a basic rails app that helped me to build my skills .
 </p>
 
 <p align="center">
-<img src="./app/assets/images/2.png" width="686" height="289">
-</p>
-
-<p align="center">
   <img src="./app/assets/images/4.png"  width="650">
 </p>
 <p align="center">
